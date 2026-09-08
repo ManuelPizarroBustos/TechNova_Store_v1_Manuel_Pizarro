@@ -1,130 +1,246 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo — TechNova Store</title>
-  <meta name="description" content="Catálogo de accesorios tecnológicos TechNova Store.">
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | TechNova Store</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="logo">TechNova</a>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h1>Catálogo</h1>
-            <p>Seis productos de ejemplo — puedes ampliar el catálogo agregando más tarjetas iguales a estas.</p>
-          </div>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">TechNova</a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <div class="product-grid">
 
-          <a class="product-card" href="producto.html">
-            <div class="product-thumb" style="background:#12A594;">🎧 Imagen producto</div>
-            <div class="product-body">
-              <span class="product-cat">Audio</span>
-              <h3>Audífonos NovaBeat X1</h3>
-              <span class="product-price">$24.990</span>
+    <main>
+
+        <section class="section">
+            <div class="container">
+
+                <h1>Catálogo de productos</h1>
+
+                <p>
+                    Conoce nuestros principales accesorios tecnológicos.
+                    Selecciona un producto para conocer más información.
+                </p>
+
+
+                <div class="product-grid">
+
+                    <!-- Audífonos -->
+                    <article class="product-card">
+
+                        <div class="product-thumb">
+                            <img 
+                                src="img/audifonos.jpg" 
+                                alt="Audífonos inalámbricos TechNova">
+                        </div>
+
+                        <div class="product-info">
+                            <h2>Audífonos NovaBeat X1</h2>
+
+                            <p>
+                                Audífonos inalámbricos con sonido de alta calidad
+                                y diseño cómodo.
+                            </p>
+
+                            <p class="price">$29.990</p>
+
+                            <a href="producto.html" class="btn btn-primary">
+                                Ver producto
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Cargador -->
+                    <article class="product-card">
+
+                        <div class="product-thumb">
+                            <img 
+                                src="img/cargador.jpg" 
+                                alt="Cargador rápido TechNova de 65 watts">
+                        </div>
+
+                        <div class="product-info">
+                            <h2>Cargador TurboCharge 65W</h2>
+
+                            <p>
+                                Cargador rápido compatible con distintos
+                                dispositivos móviles.
+                            </p>
+
+                            <p class="price">$24.990</p>
+
+                            <a href="producto.html" class="btn btn-primary">
+                                Ver producto
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Smartwatch -->
+                    <article class="product-card">
+
+                        <div class="product-thumb">
+                            <img 
+                                src="img/smartwatch.jpg" 
+                                alt="Smartwatch NovaFit Pro">
+                        </div>
+
+                        <div class="product-info">
+                            <h2>Smartwatch NovaFit Pro</h2>
+
+                            <p>
+                                Reloj inteligente para monitorear actividad
+                                diaria y recibir notificaciones.
+                            </p>
+
+                            <p class="price">$39.990</p>
+
+                            <a href="producto.html" class="btn btn-primary">
+                                Ver producto
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Teclado -->
+                    <article class="product-card">
+
+                        <div class="product-thumb">
+                            <img 
+                                src="img/teclado.jpg" 
+                                alt="Teclado mecánico NovaKey TKL">
+                        </div>
+
+                        <div class="product-info">
+                            <h2>Teclado NovaKey TKL</h2>
+
+                            <p>
+                                Teclado compacto con iluminación RGB,
+                                ideal para trabajo y gaming.
+                            </p>
+
+                            <p class="price">$34.990</p>
+
+                            <a href="producto.html" class="btn btn-primary">
+                                Ver producto
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Mouse -->
+                    <article class="product-card">
+
+                        <div class="product-thumb">
+                            <img 
+                                src="img/mouse.jpg" 
+                                alt="Mouse inalámbrico NovaClick">
+                        </div>
+
+                        <div class="product-info">
+                            <h2>Mouse NovaClick</h2>
+
+                            <p>
+                                Mouse inalámbrico ergonómico para uso diario
+                                y trabajo de oficina.
+                            </p>
+
+                            <p class="price">$19.990</p>
+
+                            <a href="producto.html" class="btn btn-primary">
+                                Ver producto
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Funda -->
+                    <article class="product-card">
+
+                        <div class="product-thumb">
+                            <img 
+                                src="img/funda.jpg" 
+                                alt="Funda protectora NovaCase para celular">
+                        </div>
+
+                        <div class="product-info">
+                            <h2>Funda Protectora NovaCase</h2>
+
+                            <p>
+                                Funda resistente para proteger tu celular
+                                contra golpes y rayones.
+                            </p>
+
+                            <p class="price">$14.990</p>
+
+                            <a href="producto.html" class="btn btn-primary">
+                                Ver producto
+                            </a>
+                        </div>
+
+                    </article>
+
+                </div>
+
             </div>
-          </a>
+        </section>
 
-          <a class="product-card" href="producto.html">
-            <div class="product-thumb" style="background:#2a3348;">🔌 Imagen producto</div>
-            <div class="product-body">
-              <span class="product-cat">Energía</span>
-              <h3>Cargador rápido 30W</h3>
-              <span class="product-price">$12.990</span>
-            </div>
-          </a>
+    </main>
 
-          <a class="product-card" href="producto.html">
-            <div class="product-thumb" style="background:#F2A93B;">⌚ Imagen producto</div>
-            <div class="product-body">
-              <span class="product-cat">Wearables</span>
-              <h3>Smartwatch NovaFit</h3>
-              <span class="product-price">$39.990</span>
-            </div>
-          </a>
 
-          <a class="product-card" href="producto.html">
-            <div class="product-thumb" style="background:#2a3348;">⌨️ Imagen producto</div>
-            <div class="product-body">
-              <span class="product-cat">Periféricos</span>
-              <h3>Teclado mecánico Compact</h3>
-              <span class="product-price">$34.990</span>
-            </div>
-          </a>
+    <footer class="site-footer">
+        <div class="container">
 
-          <a class="product-card" href="producto.html">
-            <div class="product-thumb" style="background:#F2A93B;">🖱️ Imagen producto</div>
-            <div class="product-body">
-              <span class="product-cat">Periféricos</span>
-              <h3>Mouse inalámbrico Ergo</h3>
-              <span class="product-price">$14.990</span>
-            </div>
-          </a>
+            <div class="footer-grid">
 
-          <a class="product-card" href="producto.html">
-            <div class="product-thumb" style="background:#12A594;">📱 Imagen producto</div>
-            <div class="product-body">
-              <span class="product-cat">Protección</span>
-              <h3>Funda reforzada Universal</h3>
-              <span class="product-price">$8.990</span>
+                <div>
+                    <strong>TechNova Store</strong>
+                    <p>
+                        Accesorios tecnológicos para tu día a día.
+                    </p>
+                </div>
+
+                <div>
+                    <strong>Navegación</strong>
+                    <p>
+                        <a href="index.html">Inicio</a><br>
+                        <a href="catalogo.html">Catálogo</a><br>
+                        <a href="contacto.html">Contacto</a><br>
+                        <a href="nosotros.html">Nosotros</a>
+                    </p>
+                </div>
+
             </div>
-          </a>
+
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2026 TechNova Store. Todos los derechos reservados.
+                </p>
+            </div>
 
         </div>
-      </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <p class="logo" style="margin-bottom:8px;">TechNova</p>
-          <p style="color:#c8ccd6; max-width: 32ch;">Accesorios tecnológicos con despacho a todo Chile.</p>
-        </div>
-        <div>
-          <h3>Navegación</h3>
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Contacto</h3>
-          <ul>
-            <li>hola@technova.cl</li>
-            <li>+56 9 1234 5678</li>
-            <li>Santiago, Chile</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 TechNova Store. Todos los derechos reservados.</span>
-        <span>Proyecto académico DSY1104 — Duoc UC</span>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/scripts.js"></script>
 </body>
 </html>
