@@ -1,48 +1,80 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | TechNova Store</title>
 
-    <link rel="stylesheet" href="css/styles.css">
+
+<title>Contacto | TechNova Store</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+
 </head>
 
 <body>
 
-    <header class="site-header">
+
+<!-- Encabezado y navegación -->
+<header class="site-header">
     <div class="container">
+
         <a href="index.html" class="logo">TechNova</a>
 
         <nav class="main-nav">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="contacto.html" aria-current="page">Contacto</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="catalogo.html">Catálogo</a>
+                </li>
+
+                <li>
+                    <a href="contacto.html" aria-current="page">Contacto</a>
+                </li>
+
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
             </ul>
         </nav>
+
     </div>
 </header>
 
-    <main>
 
-        <section>
+<main>
+
+    <!-- Introducción -->
+    <section class="section">
+        <div class="container">
+
             <h2>Contáctanos</h2>
 
             <p>
                 ¿Tienes alguna pregunta sobre nuestros productos?
                 Completa el siguiente formulario y nos pondremos en contacto contigo.
             </p>
-        </section>
 
-        <section>
+        </div>
+    </section>
+
+
+    <!-- Formulario de contacto -->
+    <section class="section section-alt">
+        <div class="container">
+
             <h2>Formulario de contacto</h2>
 
-            <form id="contactForm" novalidate>
+            <form id="contactForm" class="form-card" novalidate>
 
-                <div>
+                <div class="field">
                     <label for="nombre">Nombre completo:</label>
+
                     <input
                         type="text"
                         id="nombre"
@@ -50,11 +82,17 @@
                         autocomplete="name"
                         placeholder="Ej: Manuel Pizarro"
                     >
-                    <small id="nombreError"></small>
+
+                    <small
+                        id="nombreError"
+                        class="error-msg">
+                    </small>
                 </div>
 
-                <div>
+
+                <div class="field">
                     <label for="email">Correo electrónico:</label>
+
                     <input
                         type="email"
                         id="email"
@@ -62,11 +100,17 @@
                         autocomplete="email"
                         placeholder="Ej: ejemplo@correo.com"
                     >
-                    <small id="emailError"></small>
+
+                    <small
+                        id="emailError"
+                        class="error-msg">
+                    </small>
                 </div>
 
-                <div>
+
+                <div class="field">
                     <label for="telefono">Teléfono:</label>
+
                     <input
                         type="tel"
                         id="telefono"
@@ -74,60 +118,117 @@
                         autocomplete="tel"
                         placeholder="Ej: +56912345678"
                     >
-                    <small id="telefonoError"></small>
+
+                    <small
+                        id="telefonoError"
+                        class="error-msg">
+                    </small>
                 </div>
 
-                <div>
+
+                <div class="field">
                     <label for="mensaje">Mensaje:</label>
+
                     <textarea
                         id="mensaje"
                         name="mensaje"
                         rows="6"
                         placeholder="Escribe tu consulta aquí..."
                     ></textarea>
-                    <small id="mensajeError"></small>
+
+                    <small
+                        id="mensajeError"
+                        class="error-msg">
+                    </small>
                 </div>
 
-                <button type="submit">Enviar consulta</button>
 
-                <p id="formSuccess"></p>
+                <button
+                    type="submit"
+                    class="btn btn-primary">
+                    Enviar consulta
+                </button>
+
+                <p
+                    id="formSuccess"
+                    class="form-status"
+                    role="status">
+                </p>
 
             </form>
-        </section>
 
-        <section>
+        </div>
+    </section>
+
+
+    <!-- Información de contacto -->
+    <section class="section">
+        <div class="container">
+
             <h2>Información de contacto</h2>
 
-            <p><strong>Email:</strong> contacto@technova.cl</p>
-            <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
-            <p><strong>Horario:</strong> Lunes a viernes de 09:00 a 18:00</p>
-        </section>
+            <p>
+                <strong>Email:</strong>
+                contacto@technova.cl
+            </p>
 
-    </main>
+            <p>
+                <strong>Teléfono:</strong>
+                +56 9 1234 5678
+            </p>
 
-    <footer class="site-footer">
+            <p>
+                <strong>Horario:</strong>
+                Lunes a viernes de 09:00 a 18:00
+            </p>
+
+        </div>
+    </section>
+
+</main>
+
+
+<!-- Pie de página -->
+<footer class="site-footer">
     <div class="container">
+
         <div class="footer-grid">
 
             <div>
-                <p class="logo" style="margin-bottom:8px;">TechNova</p>
-                <p style="color:#c8ccd6; max-width:32ch;">
+                <p class="logo footer-logo">TechNova</p>
+
+                <p class="footer-description">
                     Accesorios tecnológicos con despacho a todo Chile.
                 </p>
             </div>
 
+
             <div>
                 <h3>Navegación</h3>
+
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="catalogo.html">Catálogo</a>
+                    </li>
+
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
                 </ul>
             </div>
 
+
             <div>
                 <h3>Contacto</h3>
+
                 <ul>
                     <li>hola@technova.cl</li>
                     <li>+56 9 1234 5678</li>
@@ -137,12 +238,23 @@
 
         </div>
 
+
         <div class="footer-bottom">
-            <span>© 2026 TechNova Store. Todos los derechos reservados.</span>
-            <span>Proyecto académico DSY1104 — Duoc UC</span>
+            <span>
+                © 2026 TechNova Store. Todos los derechos reservados.
+            </span>
+
+            <span>
+                Proyecto académico DSY1104 — Duoc UC
+            </span>
         </div>
+
     </div>
-    </footer>
-    <script src="./js/scripts.js"></script>
+</footer>
+
+
+<script src="./js/scripts.js"></script>
+
+
 </body>
 </html>

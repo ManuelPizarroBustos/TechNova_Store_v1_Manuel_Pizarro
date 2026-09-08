@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -7,195 +8,276 @@
   <meta name="description" content="TechNova Store: audífonos, cargadores, fundas, teclados, mouse y smartwatches.">
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="logo">TechNova</a>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html" aria-current="page">Inicio</a></li>
-          <li><a href="catalogo.html">Catálogo</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-        </ul>
-      </nav>
-    </div>
+
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html" aria-current="page">Inicio</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+    </ul>
+  </nav>
+</div>
+
+
   </header>
-    <main>
-    <section class="hero">
-      <div class="container">
-        <div class="hero-copy">
-          <p class="eyebrow">Accesorios tecnológicos</p>
-          <h1>Todo lo que tu equipo necesita, en un solo lugar</h1>
-          <p>De WhatsApp a la web: mismo catálogo de siempre, ahora fácil de explorar. Audífonos, cargadores, fundas, teclados, mouse y smartwatches con envío a todo Chile.</p>
-          <a href="catalogo.html" class="btn btn-primary">Ver catálogo</a>
-          <a href="contacto.html" class="btn btn-secondary">Hacer una consulta</a>
-        </div>
 
-        <div class="shelf-mock" aria-hidden="true">
-          <div class="shelf-row">
-            <div class="shelf-item" style="background:#12A594;">🎧</div>
-            <div class="shelf-item" style="background:#2a3348;">🔌</div>
-            <div class="shelf-item" style="background:#F2A93B;">⌚</div>
-          </div>
-          <div class="shelf-row">
-            <div class="shelf-item" style="background:#2a3348;">⌨️</div>
-            <div class="shelf-item" style="background:#F2A93B;">🖱️</div>
-            <div class="shelf-item" style="background:#12A594;">📱</div>
-          </div>
-        </div>
-      </div>
-    </section>
-        <section class="section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2>Categorías destacadas</h2>
-            <p>Explora por tipo de accesorio.</p>
-          </div>
-          <a href="catalogo.html" class="btn btn-secondary">Ver todo</a>
-        </div>
-
-        <div class="product-grid">
-        <article class="product-card">
-
-        <div class="product-thumb">
-            <img 
-                src="img/audifonos.jpg" 
-                alt="Audífonos inalámbricos">
-        </div>
-
-        <div class="product-body">
-        <span class="product-cat">Audio</span>
-        <h3>Audífonos inalámbricos</h3>
-        </div>
-
-    </article>
+  <main>
 
 
-    <article class="product-card">
+<!-- Sección principal -->
+<section class="hero">
+  <div class="container">
 
-        <div class="product-thumb">
-            <img 
-                src="img/cargador.jpg" 
-                alt="Cargadores rápidos">
-        </div>
+    <div class="hero-copy">
+      <p class="eyebrow">Accesorios tecnológicos</p>
 
-    <div class="product-body">
-        <span class="product-cat">Energía</span>
-        <h3>Cargadores rápidos</h3>
+      <h1>Todo lo que tu equipo necesita, en un solo lugar</h1>
+
+      <p>
+        De WhatsApp a la web: mismo catálogo de siempre, ahora fácil de explorar.
+        Audífonos, cargadores, fundas, teclados, mouse y smartwatches con envío a todo Chile.
+      </p>
+
+      <a href="catalogo.html" class="btn btn-primary">Ver catálogo</a>
+      <a href="contacto.html" class="btn btn-secondary">Hacer una consulta</a>
     </div>
 
-    </article>
+    <div class="shelf-mock" aria-hidden="true">
 
-
-    <article class="product-card">
-
-        <div class="product-thumb">
-            <img 
-                src="img/smartwatch.jpg" 
-                alt="Smartwatches">
-        </div>
-
-        <div class="product-body">
-            <span class="product-cat">Wearables</span>
-            <h3>Smartwatches</h3>
-        </div>
-
-    </article>
-
-
-    <article class="product-card">
-
-        <div class="product-thumb">
-            <img 
-                src="img/teclado.jpg" 
-                alt="Teclados mecánicos">
-        </div>
-
-        <div class="product-body">
-            <span class="product-cat">Periféricos</span>
-            <h3>Teclados mecánicos</h3>
-        </div>
-
-    </article>
-        </div>
+      <div class="shelf-row">
+        <div class="shelf-item shelf-audio">🎧</div>
+        <div class="shelf-item shelf-energy">🔌</div>
+        <div class="shelf-item shelf-wearable">⌚</div>
       </div>
-    </section>
-    <section class="section">
-    <div class="container">
 
-        <h2>Conoce TechNova Store</h2>
+      <div class="shelf-row">
+        <div class="shelf-item shelf-energy">⌨️</div>
+        <div class="shelf-item shelf-wearable">🖱️</div>
+        <div class="shelf-item shelf-audio">📱</div>
+      </div>
 
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Categorías destacadas -->
+<section class="section section-alt">
+  <div class="container">
+
+    <div class="section-head">
+      <div>
+        <h2>Categorías destacadas</h2>
+        <p>Explora por tipo de accesorio.</p>
+      </div>
+
+      <a href="catalogo.html" class="btn btn-secondary">Ver todo</a>
+    </div>
+
+    <div class="product-grid">
+
+      <article class="product-card">
+        <div class="product-thumb">
+          <img
+            src="img/audifonos.jpg"
+            alt="Audífonos inalámbricos">
+        </div>
+
+        <div class="product-body">
+          <span class="product-cat">Audio</span>
+          <h3>Audífonos inalámbricos</h3>
+        </div>
+      </article>
+
+
+      <article class="product-card">
+        <div class="product-thumb">
+          <img
+            src="img/cargador.jpg"
+            alt="Cargadores rápidos">
+        </div>
+
+        <div class="product-body">
+          <span class="product-cat">Energía</span>
+          <h3>Cargadores rápidos</h3>
+        </div>
+      </article>
+
+
+      <article class="product-card">
+        <div class="product-thumb">
+          <img
+            src="img/smartwatch.jpg"
+            alt="Smartwatches">
+        </div>
+
+        <div class="product-body">
+          <span class="product-cat">Wearables</span>
+          <h3>Smartwatches</h3>
+        </div>
+      </article>
+
+
+      <article class="product-card">
+        <div class="product-thumb">
+          <img
+            src="img/teclado.jpg"
+            alt="Teclados mecánicos">
+        </div>
+
+        <div class="product-body">
+          <span class="product-cat">Periféricos</span>
+          <h3>Teclados mecánicos</h3>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Video -->
+<section class="section">
+  <div class="container">
+
+    <h2>Conoce TechNova Store</h2>
+
+    <p>
+      Descubre algunos de los accesorios tecnológicos
+      que tenemos disponibles en nuestra tienda.
+    </p>
+
+    <div class="video-container">
+      <video controls>
+        <source src="video/technova.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+      </video>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Newsletter -->
+<section class="section">
+  <div class="container">
+
+    <div class="section-head">
+      <div>
+        <h2>Conoce nuestras novedades</h2>
         <p>
-            Descubre algunos de los accesorios tecnológicos
-            que tenemos disponibles en nuestra tienda.
+          Déjanos tu correo y te avisamos de nuevos productos y ofertas.
         </p>
-
-        <div class="video-container">
-            <video controls>
-                <source src="video/technova.mp4" type="video/mp4">
-                Tu navegador no soporta la reproducción de video.
-            </video>
-        </div>
-
-    </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2>Conoce nuestras novedades</h2>
-            <p>Déjanos tu correo y te avisamos de nuevos productos y ofertas.</p>
-          </div>
-        </div>
-
-        <form class="form-card" id="newsletter-form" novalidate>
-          <div class="newsletter">
-            <div class="field" id="newsletter-email-field">
-              <label for="newsletter-email">Correo electrónico</label>
-              <input type="email" id="newsletter-email" name="newsletter-email" autocomplete="email" placeholder="tu@correo.cl">
-              <span class="error-msg" id="newsletter-email-error">Ingresa un correo válido, por ejemplo nombre@correo.cl.</span>
-            </div>
-            <button type="submit" class="btn btn-primary">Suscribirme</button>
-          </div>
-          <p class="form-status" id="newsletter-status" role="status"></p>
-        </form>
       </div>
-    </section>
-    </main>
-      <footer class="site-footer">
+    </div>
+
+    <form class="form-card" id="newsletter-form" novalidate>
+
+      <div class="newsletter">
+
+        <div class="field" id="newsletter-email-field">
+
+          <label for="newsletter-email">
+            Correo electrónico
+          </label>
+
+          <input
+            type="email"
+            id="newsletter-email"
+            name="newsletter-email"
+            autocomplete="email"
+            placeholder="tu@correo.cl">
+
+          <span
+            class="error-msg"
+            id="newsletter-email-error">
+            Ingresa un correo válido, por ejemplo nombre@correo.cl.
+          </span>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          Suscribirme
+        </button>
+
+      </div>
+
+      <p
+        class="form-status"
+        id="newsletter-status"
+        role="status">
+      </p>
+
+    </form>
+
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- Pie de página -->
+
+  <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div>
-          <p class="logo" style="margin-bottom:8px;">TechNova</p>
-          <p style="color:#c8ccd6; max-width: 32ch;">Accesorios tecnológicos con despacho a todo Chile. Antes solo por Instagram y WhatsApp, ahora también aquí.</p>
-        </div>
-        <div>
-          <h3>Navegación</h3>
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Contacto</h3>
-          <ul>
-            <li>hola@technova.cl</li>
-            <li>+56 9 1234 5678</li>
-            <li>Santiago, Chile</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 TechNova Store. Todos los derechos reservados.</span>
-        <span>Proyecto académico DSY1104 — Duoc UC</span>
-      </div>
+
+  <div class="footer-grid">
+
+    <div>
+      <p class="logo footer-logo">TechNova</p>
+
+      <p class="footer-description">
+        Accesorios tecnológicos con despacho a todo Chile.
+        Antes solo por Instagram y WhatsApp, ahora también aquí.
+      </p>
     </div>
+
+
+    <div>
+      <h3>Navegación</h3>
+
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+      </ul>
+    </div>
+
+
+    <div>
+      <h3>Contacto</h3>
+
+      <ul>
+        <li>hola@technova.cl</li>
+        <li>+56 9 1234 5678</li>
+        <li>Santiago, Chile</li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <div class="footer-bottom">
+    <span>© 2026 TechNova Store. Todos los derechos reservados.</span>
+    <span>Proyecto académico DSY1104 — Duoc UC</span>
+  </div>
+
+</div>
+
+
   </footer>
 
   <script src="js/scripts.js"></script>
+
 </body>
 </html>
