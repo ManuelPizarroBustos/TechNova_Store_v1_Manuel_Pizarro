@@ -242,5 +242,155 @@ document.addEventListener("DOMContentLoaded", function () {
 
         mensajeElemento.style.display = "none";
     }
+    // ==========================================
+    // PRODUCTOS DINÁMICOS
+    // ==========================================
 
+    const productos = {
+
+    audifonos: {
+        nombre: "Audífonos NovaBeat X1",
+        categoria: "Audio",
+        precio: "$29.990",
+        imagen: "img/audifonos.jpg",
+        descripcion:
+            "Audífonos inalámbricos diseñados para entregar una experiencia de audio cómoda y de alta calidad.",
+        caracteristicas: [
+            "Conexión inalámbrica Bluetooth.",
+            "Diseño cómodo y liviano.",
+            "Batería de larga duración.",
+            "Micrófono integrado.",
+            "Compatibles con dispositivos móviles."
+        ]
+    },
+
+    cargador: {
+        nombre: "Cargador TurboCharge 65W",
+        categoria: "Energía",
+        precio: "$24.990",
+        imagen: "img/cargador.jpg",
+        descripcion:
+            "Cargador rápido compatible con distintos dispositivos móviles.",
+        caracteristicas: [
+            "Potencia de hasta 65W.",
+            "Carga rápida.",
+            "Diseño compacto.",
+            "Compatible con distintos dispositivos.",
+            "Protección contra sobrecarga."
+        ]
+    },
+
+    smartwatch: {
+        nombre: "Smartwatch NovaFit Pro",
+        categoria: "Wearables",
+        precio: "$39.990",
+        imagen: "img/smartwatch.jpg",
+        descripcion:
+            "Reloj inteligente para monitorear actividad diaria y recibir notificaciones.",
+        caracteristicas: [
+            "Pantalla digital.",
+            "Monitoreo de actividad.",
+            "Recepción de notificaciones.",
+            "Batería de larga duración.",
+            "Diseño moderno."
+        ]
+    },
+
+    teclado: {
+        nombre: "Teclado NovaKey TKL",
+        categoria: "Periféricos",
+        precio: "$34.990",
+        imagen: "img/teclado.jpg",
+        descripcion:
+            "Teclado compacto con iluminación RGB, ideal para trabajo y gaming.",
+        caracteristicas: [
+            "Formato compacto TKL.",
+            "Iluminación RGB.",
+            "Diseño cómodo.",
+            "Conexión USB.",
+            "Ideal para trabajo y gaming."
+        ]
+    },
+
+    mouse: {
+        nombre: "Mouse NovaClick",
+        categoria: "Periféricos",
+        precio: "$19.990",
+        imagen: "img/mouse.jpg",
+        descripcion:
+            "Mouse inalámbrico ergonómico para uso diario y trabajo de oficina.",
+        caracteristicas: [
+            "Conexión inalámbrica.",
+            "Diseño ergonómico.",
+            "Uso cómodo.",
+            "Batería de larga duración.",
+            "Ideal para oficina y estudio."
+        ]
+    },
+
+    funda: {
+        nombre: "Funda Protectora NovaCase",
+        categoria: "Accesorios",
+        precio: "$14.990",
+        imagen: "img/funda.jpg",
+        descripcion:
+            "Funda resistente para proteger tu celular contra golpes y rayones.",
+        caracteristicas: [
+            "Material resistente.",
+            "Protección contra golpes.",
+            "Protección contra rayones.",
+            "Diseño liviano.",
+            "Fácil instalación."
+        ]
+    }
+};
+
+
+    // Obtener producto desde la URL
+    const parametros = new URLSearchParams(window.location.search);
+    const productoSeleccionado = parametros.get("producto");
+
+
+    // Comprobar que estamos en la página de producto
+    if (productoSeleccionado && document.getElementById("producto-nombre")) {
+
+    const producto = productos[productoSeleccionado];
+
+    if (producto) {
+
+        document.getElementById("producto-nombre").textContent =
+            producto.nombre;
+
+        document.getElementById("producto-categoria").textContent =
+            producto.categoria;
+
+        document.getElementById("producto-precio").textContent =
+            producto.precio;
+
+        document.getElementById("producto-descripcion").textContent =
+            producto.descripcion;
+
+        const imagen = document.getElementById("producto-imagen");
+
+        imagen.src = producto.imagen;
+        imagen.alt = producto.nombre;
+
+        const listaCaracteristicas =
+            document.getElementById("producto-caracteristicas");
+
+        listaCaracteristicas.innerHTML = "";
+
+        producto.caracteristicas.forEach(function (caracteristica) {
+
+            const elemento = document.createElement("li");
+
+            elemento.textContent = caracteristica;
+
+            listaCaracteristicas.appendChild(elemento);
+
+        });
+
+        document.title = producto.nombre + " | TechNova Store";
+        }
+    }
 });
